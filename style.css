@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: #ffffff;
+    background-image: url("images/bg-tablet-pattern.svg");
+    background-position-x: 108%;
+    background-position-y:  -184px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+
+main,
+nav {
+    width: 80%;
+    margin: auto;
+}
+
+.logo img {
+    height: 100%;
+}
+.hamburger-menu-icon{
+    display: none;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    /* gap: 40px; */
+    padding: 20px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    gap: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    /* height: 80px; */
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    display: flex;
+    border-bottom: 1px dotted transparent;
+    align-items: center;
+    padding: 5px 0;
+}
+
+a:hover {
+    border-bottom: 1px dotted orangered;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+button {
+    padding: 10px 34px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: orangered;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px gray;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    /* border: 3px solid black; */
+    position: relative;
+}
+
+.banner-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner p,
+.about p {
+    color: gray;
+    font-size: 15px;
+    width: 400px;
+    text-align: justify;
+}
+
+.banner img {
+    width: 100%;
+
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.speciality button {
+    padding: 2px 14px;
+    margin-right: 10px;
+}
+
+.speciality{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 10px;
+}
+.speciality p,h4{
+    margin-bottom: 20px;
+}
+.what-they-said{
+    width: 100%;
+}
+.statements-box{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.statement{
+    position: relative;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 10px;
+}
+.what-they-said h2{
+    margin: 60px;
+    text-align: center;
+}
+.statement img{
+    width: 50px;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.statement h5{
+    margin-top: 30px;
+}
+.what-they-said-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px ;
+}
+.simplify-team-works{
+    width: 100%;
+    background-color: #f3613c;
+    height: 400px;
+    background-image: url("/images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 60px bottom;
+    background-size: cover;
+
+}
+.simplify-team-works-contents{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.simplify-team-works-contents button{
+    background-color: white;
+    color: black;
+}
+input {
+    padding: 10px 34px;
+    border-radius: 25px;
+    border: none;
+    color: black;
+    outline: orangered;
+    
+}
+footer{
+    width: 100%;
+    background-color: #1e1e26;
+    /* height: 400px;  */
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+footer div{
+    padding: 40px;
+}
+
+footer a{
+    color: white;
+
+}
+.footer-nav-items-second{
+    display: none;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    order: 2;
+    gap: 10px;
+}
+.logo-img{
+    order: -1;
+}
+.responsive-navbar{
+    height: 200px;
+    width: 200px;
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    position: absolute;
+    top: -1000px;
+    right: 0;
+}
+.responsive-navbar ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    justify-content: space-around;
+    align-items: center;
+}
+.responsive-navbar li{
+    width: 100%;
+    /* background-color: #f3613c; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* responsive design */
+
+@media (min-width:300px) and (max-width:950px) {
+    body {
+        background-position-x:100px;
+        background-position-y: -3%;
+        background-repeat: no-repeat;
+        background-size:100%;
+       
+    }
+    .nav-items {
+        display: none;
+    }
+
+    nav {
+        padding: 5px 5px;
+
+    }
+    .hamburger-menu-icon{
+        display: inline;
+    }
+    .responsive-navbar{
+        display: inline;
+    }
+    nav button {
+        display: none;
+    }
+ 
+   
+    .logo img {
+        width: 80px;
+        margin: 0 5px;
+    }
+
+    .banner {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 60px;
+
+    }
+
+    .banner-intro {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        order: 1;
+    }
+
+    .banner h1 {
+        font-size: 1.75rem;
+    }
+
+    .banner p {
+        color: gray;
+        font-size: 10px;
+        width: 100%;
+        /* text-align: justify; */
+        line-height: 1.5rem;
+    }
+
+    .banner img {
+        display: flex;
+        order: 2;
+    }
+    .about {
+       flex-direction: column;
+    }
+    
+    .speciality button {
+        padding: 2px 14px;
+        margin-right: 10px;
+    }
+    
+    .speciality{
+      flex-direction: column;
+    }
+    .speciality p,h4, .about p{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .statements-box{
+        flex-direction: column;
+    }
+    .simplify-team-works-contents{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .simplify-team-works-contents h2{
+       font-size:34px;
+       margin-bottom: 20px;
+      }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    } 
+    
+    footer div{
+        padding: 5px;
+    } 
+    .footer-go {
+        display: flex;
+        order: -5;
+    }
+    .footer-go button,input{
+        padding: 9px 19px;
+    }
+    .footer-logo{
+        /* display: flex; */
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .footer-nav-items-first{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        order: -4;
+    }
+    .footer-nav-items{
+       display: none;
+    }
+    .footer-nav-items-second{
+        display: inline-block;
+    }
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        order: 2;
+    }
+    .logo-img{
+        order: -1;
+    }
+      
+    
+}
